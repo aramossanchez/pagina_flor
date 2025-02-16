@@ -24,14 +24,14 @@ export default function Header() {
 
   return (
     <div
-      className={`${headerStyle} w-full flex items-center justify-between bg-primaryColor h-headerHeight px-8 sticky top-0 duration-300 z-50`}
+      className={`${headerStyle} w-full flex items-center justify-around bg-transparent h-headerHeight px-8 mobile:sticky relative top-0 duration-300 z-50`}
     >
       <Image
-        src={`${basePath}images/logo.webp`}
+        src={`${basePath}images/logo.png`}
         width={500}
         height={500}
         alt="Logo"
-        className="h-headerHeight object-contain w-fit py-2"
+        className="h-headerHeight object-contain w-fit py-8"
       />
       {width <= MOBILE_WIDTH ? (
         <>

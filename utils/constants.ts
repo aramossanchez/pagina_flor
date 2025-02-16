@@ -4,15 +4,19 @@ export const NAVIGATION_INITIATED_SCROLL = 100;
 
 export const HEADER_LINKS = [
   {
-    label: 'Link 1',
+    label: 'SOBRE MÍ',
     url: '/',
   },
   {
-    label: 'Link 2',
+    label: 'SERVICIOS',
     url: '/',
   },
   {
-    label: 'Link 3',
+    label: 'TESTIMONIOS',
+    url: '/',
+  },
+  {
+    label: 'BLOG',
     url: '/',
   },
 ];

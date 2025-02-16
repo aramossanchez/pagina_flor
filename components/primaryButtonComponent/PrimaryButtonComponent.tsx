@@ -10,7 +10,7 @@ export default function PrimaryButtonComponent({
   icon,
 }: PrimaryButtonComponentProps) {
   return (
-    <button className="text-quaternaryColor font-bold border-2 border-quaternaryColor w-fit px-4 py-2 cursor-pointer rounded-md hover:text-background hover:bg-quaternaryColor duration-200 flex flex-row items-center gap-x-4">
+    <button className="text-sm text-quaternaryColor font-bold border-2 border-quaternaryColor w-fit px-4 py-2 cursor-pointer rounded-md hover:text-background hover:bg-quaternaryColor duration-200 flex flex-row items-center gap-x-4">
       {text}
       {icon && icon}
     </button>

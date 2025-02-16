@@ -10,8 +10,8 @@
   --tertiaryColor: #f6d8d0;
   --quaternaryColor: #183351;
   --primaryColorTransparent: #f1e5d9e7;
-  --headerHeight: 7vh;
-  --bodyHeight: 93vh;
+  --headerHeight: 20vh;
+  --bodyHeight: 80vh;
 }
 
 @media (prefers-color-scheme: dark) {

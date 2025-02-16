@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import { MOBILE_WIDTH } from './utils/constants';
 
 export default {
   content: [
@@ -40,6 +41,9 @@ export default {
       animation: {
         rotate: 'rotate 0.25s',
         showTopToCenter: 'showTopToCenter 1s',
+      },
+      screens: {
+        mobile: MOBILE_WIDTH.toString(),
       },
     },
   },
