@@ -1,4 +1,4 @@
-export const MOBILE_WIDTH = 600;
+export const MOBILE_WIDTH = 800;
 
 export const NAVIGATION_INITIATED_SCROLL = 100;
 

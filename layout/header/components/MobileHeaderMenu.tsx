@@ -23,7 +23,7 @@ export default function MobileHeaderMenu({
   return (
     <div
       ref={containerRef}
-      className={`${containerStyle} absolute left-0 top-headerHeight h-fit bg-primaryColorTransparent w-full flex flex-col items-center gap-y-5 duration-300`}
+      className={`${containerStyle} absolute left-0 top-headerHeightMobile h-fit bg-background w-full flex flex-col items-center gap-y-7 duration-300`}
     >
       {HEADER_LINKS.map((link) => {
         return (

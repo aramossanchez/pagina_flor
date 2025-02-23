@@ -17,25 +17,28 @@ export default function Header() {
 
   const [opened, setOpened] = useState<boolean>(false);
 
-  const headerStyle =
+  const headerStyleScroll =
     scrollPosition > NAVIGATION_INITIATED_SCROLL
       ? 'bg-primaryColorTransparent'
       : 'bg-primaryColor';
 
+  const headerStyleWidth =
+    width >= MOBILE_WIDTH ? 'h-headerHeight' : 'h-headerHeightMobile';
+
   return (
     <div
-      className={`${headerStyle} w-full flex items-center justify-around bg-transparent h-headerHeight px-8 mobile:sticky relative top-0 duration-300 z-50`}
+      className={`${headerStyleWidth} w-full flex items-center justify-around bg-background  px-8 sticky mobile:relative top-0 duration-300 z-50`}
     >
       <Image
         src={`${basePath}images/logo.png`}
         width={500}
         height={500}
         alt="Logo"
-        className="h-headerHeight object-contain w-fit py-8"
+        className="h-full object-center w-fit mobile:py-8 py-2"
       />
       {width <= MOBILE_WIDTH ? (
         <>
-          <div className="w-10 absolute right-0 top-0 h-headerHeight flex flex-col justify-center">
+          <div className="w-10 absolute right-0 top-0 h-full flex flex-col justify-center">
             <button onClick={() => setOpened(!opened)}>
               {opened ? (
                 <div key="close" className="animate-rotate w-fit">

@@ -10,15 +10,22 @@
   --tertiaryColor: #f6d8d0;
   --quaternaryColor: #183351;
   --primaryColorTransparent: #f1e5d9e7;
+  --whatsappColor: #25d366;
   --headerHeight: 20vh;
+  --headerHeightMobile: 10vh;
   --bodyHeight: 80vh;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --primaryColor: #461a00;
+    --background: #ffffff;
+    --foreground: #171717;
+    --primaryColor: #f1e5d9;
+    --secondaryColor: #e5b996;
+    --tertiaryColor: #f6d8d0;
+    --quaternaryColor: #183351;
+    --primaryColorTransparent: #f1e5d9e7;
+    --whatsappColor: #25d366;
   }
 }
 
@@ -28,8 +35,8 @@
 }
 
 ::selection {
-  color: var(--foreground);
-  background: var(--primaryColor);
+  color: var(--background);
+  background: var(--quaternaryColor);
 }
 
 body {
@@ -39,6 +46,10 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+
+p {
+  font-size: large;
 }
 
 ::-webkit-scrollbar {
@@ -83,9 +94,25 @@ body {
   row-gap: 2rem;
 }
 
+.section_style > article {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
 @media (max-width: 1300px) {
-  .section_style > div {
+  .section_style > article {
     max-width: 100%;
     padding: 0 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .section_style > article {
+    max-width: 100%;
+    padding: 10% 5% 0 5%;
   }
 }

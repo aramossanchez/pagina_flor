@@ -20,13 +20,16 @@ export default {
         tertiaryColor: 'var(--tertiaryColor)',
         quaternaryColor: 'var(--quaternaryColor)',
         primaryColorTransparent: 'var(--primaryColorTransparent)',
+        whatsappColor: 'var(--whatsappColor)',
       },
       height: {
         headerHeight: 'var(--headerHeight)',
+        headerHeightMobile: 'var(--headerHeightMobile)',
         bodyHeight: 'var(--bodyHeight)',
       },
       spacing: {
         headerHeight: 'var(--headerHeight)',
+        headerHeightMobile: 'var(--headerHeightMobile)',
       },
       keyframes: {
         rotate: {
@@ -43,7 +46,8 @@ export default {
         showTopToCenter: 'showTopToCenter 1s',
       },
       screens: {
-        mobile: MOBILE_WIDTH.toString(),
+        desktop: '1300px',
+        mobile: { min: `${MOBILE_WIDTH}px` },
       },
     },
   },
