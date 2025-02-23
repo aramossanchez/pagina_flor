@@ -1,6 +1,6 @@
 import React from 'react';
-import PresentationSection from './components/PresentationSection/PresentationSection';
 import WhatsappButton from '@/components/WhatsappButton/WhatsappButton';
+import PresentationSection from './components/PresentationSection/PresentationSection';
 
 export default function HomeContainer() {
   return (
