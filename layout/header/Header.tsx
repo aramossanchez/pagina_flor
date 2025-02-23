@@ -2,25 +2,18 @@
 
 import { HamburgerIcon } from '@/components/icons/HamburgerIcon';
 import { useWindowSize } from '@/hooks/useWindowSize';
-import { MOBILE_WIDTH, NAVIGATION_INITIATED_SCROLL } from '@/utils/constants';
+import { MOBILE_WIDTH } from '@/utils/constants';
 import React, { useState } from 'react';
 import MobileHeaderMenu from './components/MobileHeaderMenu';
 import { CrossIcon } from '@/components/icons/CrossIcon';
 import DesktopHeaderMenu from './components/DesktopHeaderMenu';
 import Image from 'next/image';
-import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { basePath } from '@/config/config';
 
 export default function Header() {
   const { width } = useWindowSize();
-  const { scrollPosition } = useScrollPosition();
 
   const [opened, setOpened] = useState<boolean>(false);
-
-  const headerStyleScroll =
-    scrollPosition > NAVIGATION_INITIATED_SCROLL
-      ? 'bg-primaryColorTransparent'
-      : 'bg-primaryColor';
 
   const headerStyleWidth =
     width >= MOBILE_WIDTH ? 'h-headerHeight' : 'h-headerHeightMobile';
