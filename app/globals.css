@@ -84,14 +84,9 @@ p {
 }
 
 .section_style > div {
-  padding-top: 2.5%;
+  padding-top: 7.5%;
   padding-bottom: 5%;
   width: 1200px;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  row-gap: 2rem;
 }
 
 .section_style > article {
@@ -108,11 +103,22 @@ p {
     max-width: 100%;
     padding: 0 5%;
   }
+  .section_style > div {
+    max-width: 100%;
+    padding: 10% 5%;
+  }
 }
 
 @media (max-width: 800px) {
   .section_style > article {
     max-width: 100%;
     padding: 10% 5% 0 5%;
+  }
+  .section_style > div {
+    max-width: 100%;
+    padding: 20% 7.5%;
+  }
+  p {
+    font-size: medium;
   }
 }
