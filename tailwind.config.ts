@@ -40,10 +40,20 @@ export default {
           '0%': { transform: 'translateY(-50%)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '100' },
         },
+        showLeftToRight: {
+          '0%': { transform: 'translateX(-50%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '100' },
+        },
+        showRightToLeft: {
+          '0%': { transform: 'translateX(50%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '100' },
+        },
       },
       animation: {
         rotate: 'rotate 0.25s',
         showTopToCenter: 'showTopToCenter 1s',
+        showLeftToRight: 'showLeftToRight 1s',
+        showRightToLeft: 'showRightToLeft 1s',
       },
       screens: {
         desktop: '1300px',
