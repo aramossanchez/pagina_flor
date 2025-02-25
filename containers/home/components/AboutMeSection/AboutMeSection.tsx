@@ -5,9 +5,9 @@ import ImageInAboutMe from './components/ImageInAboutMe';
 export default function AboutMeSection() {
   return (
     <section className="section_style bg-primaryColor">
-      <div className="flex mobile:flex-row flex-col justify-between items-start gap-y-20">
+      <div className="flex mobile:flex-row flex-col justify-between mobile:items-start items-center gap-y-20 gap-x-8">
         <ImageInAboutMe />
-        <div className="flex flex-col gap-y-6 mobile:max-w-[50%] max-w-full">
+        <div className="flex flex-col gap-y-6 mobile:max-w-[50%] mobile:min-w-[50%] max-w-full min-w-full mobile:order-2 order-1">
           <PrimarySubtitle
             text="Hola, soy Flor Escribano, psicóloga con habilitación sanitaria,
             especializada en la intervención sobre procesos de duelo, trauma y

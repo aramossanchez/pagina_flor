@@ -16,7 +16,7 @@ export default function ImageInAboutMe() {
       alt="Foto principal"
       width={500}
       height={500}
-      className={`${blockStyle} shadow-xl rounded-t-full rounded-md`}
+      className={`${blockStyle} shadow-xl rounded-t-full rounded-md mobile:max-w-[50%] max-w-full mobile:order-1 order-2`}
     />
   );
 }
