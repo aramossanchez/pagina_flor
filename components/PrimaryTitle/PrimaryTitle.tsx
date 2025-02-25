@@ -8,7 +8,7 @@ interface PrimaryTitleProps {
 export default function PrimaryTitle({ text, className }: PrimaryTitleProps) {
   return (
     <h1
-      className={`${className} md:text-5xl text-4xl font-bold text-quaternaryColor`}
+      className={`${className} md:text-5xl text-4xl font-bold text-quaternaryColor text-center`}
     >
       {text}
     </h1>

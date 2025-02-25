@@ -3,6 +3,8 @@ import WhatsappButton from '@/components/WhatsappButton/WhatsappButton';
 import PresentationSection from './components/presentationSection/PresentationSection';
 import AboutMeSection from './components/AboutMeSection/AboutMeSection';
 import { Separator } from '@/components/icons/Separator';
+import ServicesSection from './components/ServicesSection/ServicesSection';
+import SimpleClaim from './components/SimpleClaim/SimpleClaim';
 
 export default function HomeContainer() {
   return (
@@ -14,6 +16,8 @@ export default function HomeContainer() {
         </div>
       </div>
       <AboutMeSection />
+      <SimpleClaim />
+      <ServicesSection />
       <WhatsappButton />
     </section>
   );
