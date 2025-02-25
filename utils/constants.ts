@@ -10,6 +10,20 @@ export const HEADER_LINKS = [
   {
     label: 'SERVICIOS',
     url: '/',
+    sublinks: [
+      {
+        label: 'TERAPIA INDIVIDUAL',
+        url: '/',
+      },
+      {
+        label: 'TERAPIA DE PAREJA',
+        url: '/',
+      },
+      {
+        label: 'TERAPIA ONLINE',
+        url: '/',
+      },
+    ],
   },
   {
     label: 'TESTIMONIOS',

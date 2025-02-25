@@ -5,6 +5,7 @@ import AboutMeSection from './components/AboutMeSection/AboutMeSection';
 import { Separator } from '@/components/icons/Separator';
 import ServicesSection from './components/ServicesSection/ServicesSection';
 import SimpleClaim from './components/SimpleClaim/SimpleClaim';
+import GoToTopButton from '@/components/GoToTopButton/GoToTopButton';
 
 export default function HomeContainer() {
   return (
@@ -18,6 +19,7 @@ export default function HomeContainer() {
       <AboutMeSection />
       <SimpleClaim />
       <ServicesSection />
+      <GoToTopButton />
       <WhatsappButton />
     </section>
   );

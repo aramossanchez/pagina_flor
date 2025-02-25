@@ -61,11 +61,11 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primaryColor);
+  background: var(--tertiaryColor);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primaryColor);
+  background: var(--tertiaryColor);
 }
 
 .container_style {
@@ -109,7 +109,7 @@ p {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 799px) {
   .section_style > article {
     max-width: 100%;
     padding: 10% 5% 0 5%;

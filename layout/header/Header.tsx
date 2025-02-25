@@ -16,11 +16,11 @@ export default function Header() {
   const [opened, setOpened] = useState<boolean>(false);
 
   const headerStyleWidth =
-    width >= MOBILE_WIDTH ? 'h-headerHeight' : 'h-headerHeightMobile';
+    width < MOBILE_WIDTH ? 'h-headerHeightMobile' : 'h-headerHeight';
 
   return (
     <div
-      className={`${headerStyleWidth} w-full flex items-center justify-around bg-background  px-8 sticky mobile:relative top-0 duration-300 z-50`}
+      className={`${headerStyleWidth} w-full flex items-center justify-around bg-background px-8 sticky mobile:relative top-0 duration-300 z-50`}
     >
       <Image
         src={`${basePath}images/logo.png`}
@@ -29,7 +29,7 @@ export default function Header() {
         alt="Logo"
         className="h-full object-center w-fit mobile:py-8 py-2"
       />
-      {width <= MOBILE_WIDTH ? (
+      {width < MOBILE_WIDTH ? (
         <>
           <div className="w-10 absolute right-0 top-0 h-full flex flex-col justify-center">
             <button onClick={() => setOpened(!opened)}>
