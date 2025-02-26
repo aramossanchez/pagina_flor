@@ -9,6 +9,7 @@ import { CrossIcon } from '@/components/icons/CrossIcon';
 import DesktopHeaderMenu from './components/DesktopHeaderMenu';
 import Image from 'next/image';
 import { basePath } from '@/config/config';
+import Link from 'next/link';
 
 export default function Header() {
   const { width } = useWindowSize();
@@ -22,13 +23,15 @@ export default function Header() {
     <div
       className={`${headerStyleWidth} w-full flex items-center justify-around bg-background px-8 sticky mobile:relative top-0 duration-300 z-50`}
     >
-      <Image
-        src={`${basePath}images/logo.png`}
-        width={500}
-        height={500}
-        alt="Logo"
-        className="h-full object-center w-fit mobile:py-8 py-2"
-      />
+      <Link href="/" className="h-full">
+        <Image
+          src={`${basePath}images/logo.png`}
+          width={500}
+          height={500}
+          alt="Logo"
+          className="h-full object-center w-fit mobile:py-8 py-2"
+        />
+      </Link>
       {width < MOBILE_WIDTH ? (
         <>
           <div className="w-10 absolute right-0 top-0 h-full flex flex-col justify-center">

@@ -1,20 +1,17 @@
-import { Montserrat } from 'next/font/google';
 import React from 'react';
-
-const montserrat = Montserrat({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  subsets: ['latin'],
-  style: ['normal'],
-});
 
 interface TitleComponentProps {
   text: string;
+  className?: string;
 }
 
-export default function TitleComponent({ text }: TitleComponentProps) {
+export default function TitleComponent({
+  text,
+  className,
+}: TitleComponentProps) {
   return (
     <h1
-      className={`${montserrat.className} text-5xl text-center font-semibold leading-snug`}
+      className={`${className} md:text-5xl text-4xl font-bold text-quaternaryColor text-center`}
     >
       {text}
     </h1>

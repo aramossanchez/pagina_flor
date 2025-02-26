@@ -16,12 +16,12 @@ export default function DesktopHeaderMenu() {
               {link?.sublinks && <ArrowDownIcon size={25} />}
             </div>
             {link?.sublinks && (
-              <div className="rounded-lg bg-tertiaryColor absolute w-fit whitespace-nowrap flex flex-col group-hover:opacity-100 duration-300 ">
+              <div className="rounded-lg bg-tertiaryColor absolute w-fit whitespace-nowrap flex flex-col group-hover:opacity-100 duration-300">
                 {link.sublinks.map((sublink) => {
                   return (
                     <Link
                       key={sublink.label}
-                      href={sublink.url}
+                      href={sublink.url ?? ''}
                       className="px-0 py-0 text-[0px] group-hover:text-sm text-quaternaryColor hover:bg-quaternaryColor hover:text-background font-semibold duration-300 group-hover:px-8 group-hover:py-4 "
                     >
                       {sublink.label}

@@ -44,7 +44,7 @@ export default function MobileHeaderMenu({
                 link?.sublinks ? setSubMenuOpened(!subMenuOpened) : {}
               }
             >
-              <Link href={link.url} className="py-5">
+              <Link href={link.url ?? ''} className="py-5">
                 {link.label}
               </Link>
               {link?.sublinks && (
@@ -62,7 +62,7 @@ export default function MobileHeaderMenu({
                   return (
                     <Link
                       key={sublink.label}
-                      href={sublink.url}
+                      href={sublink.url ?? ''}
                       className="py-5 text-center"
                     >
                       {sublink.label}

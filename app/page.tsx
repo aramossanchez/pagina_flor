@@ -1,5 +1,5 @@
 import HomeContainer from '@/containers/home/HomeContainer';
 
-export default function Home() {
+export default function HomePage() {
   return <HomeContainer />;
 }

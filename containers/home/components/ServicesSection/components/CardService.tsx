@@ -1,5 +1,5 @@
 import PrimaryButtonComponent from '@/components/primaryButtonComponent/PrimaryButtonComponent';
-import PrimarySubtitle from '@/components/PrimarySubtitle/PrimarySubtitle';
+import SubtitleComponent from '@/components/SubtitleComponent/SubtitleComponent';
 import { basePath } from '@/config/config';
 import Image from 'next/image';
 import React from 'react';
@@ -25,7 +25,7 @@ export default function CardService({
           height={500}
           className="w-[100px]"
         />
-        <PrimarySubtitle text={title} />
+        <SubtitleComponent text={title} />
       </div>
       <p>{description}</p>
       <div className="w-full flex flex-row justify-center h-full items-end">

@@ -11,7 +11,7 @@ export default function LinkHeader({ label, url }: LinkHeaderProps) {
     <div className="flex flex-col items-center group">
       <Link
         key={label}
-        href={url}
+        href={url ?? ''}
         className="text-sm hover:text-quaternaryColor font-semibold duration-200"
       >
         {label}

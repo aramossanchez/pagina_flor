@@ -1,7 +1,7 @@
 'use client';
 
 import PrimaryButtonComponent from '@/components/primaryButtonComponent/PrimaryButtonComponent';
-import PrimaryTitle from '@/components/PrimaryTitle/PrimaryTitle';
+import TitleComponent from '@/components/TitleComponent/TitleComponent';
 import useScreenObserver from '@/hooks/useScreenObserver';
 import React from 'react';
 
@@ -16,7 +16,7 @@ export default function SimpleClaim() {
         className={`${blockStyle} flex flex-col items-center gap-y-8`}
         ref={refCallback}
       >
-        <PrimaryTitle text="Healing is not a linear process" />
+        <TitleComponent text="Healing is not a linear process" />
         <p className="text-center">
           My role is to support you in understanding the impacts of trauma. As a
           trauma therapist, I work somatically with the body, brain, and nervous

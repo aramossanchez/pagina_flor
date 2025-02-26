@@ -9,19 +9,19 @@ export const HEADER_LINKS = [
   },
   {
     label: 'SERVICIOS',
-    url: '/',
+    url: '',
     sublinks: [
       {
         label: 'TERAPIA INDIVIDUAL',
-        url: '/',
+        url: '/services/terapia-individual',
       },
       {
         label: 'TERAPIA DE PAREJA',
-        url: '/',
+        url: '/services/terapia-de-pareja',
       },
       {
         label: 'TERAPIA ONLINE',
-        url: '/',
+        url: '/services/terapia-online',
       },
     ],
   },
@@ -31,6 +31,6 @@ export const HEADER_LINKS = [
   },
   {
     label: 'BLOG',
-    url: '/',
+    url: '/blog',
   },
 ];

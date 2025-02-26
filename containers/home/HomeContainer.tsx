@@ -2,7 +2,7 @@ import React from 'react';
 import WhatsappButton from '@/components/WhatsappButton/WhatsappButton';
 import PresentationSection from './components/presentationSection/PresentationSection';
 import AboutMeSection from './components/AboutMeSection/AboutMeSection';
-import { Separator } from '@/components/icons/Separator';
+import { Separator } from '@/components/svgs/Separator';
 import ServicesSection from './components/ServicesSection/ServicesSection';
 import SimpleClaim from './components/SimpleClaim/SimpleClaim';
 import GoToTopButton from '@/components/GoToTopButton/GoToTopButton';

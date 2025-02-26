@@ -1,7 +1,7 @@
 'use client';
 
 import PrimaryButtonComponent from '@/components/primaryButtonComponent/PrimaryButtonComponent';
-import PrimaryTitle from '@/components/PrimaryTitle/PrimaryTitle';
+import TitleComponent from '@/components/TitleComponent/TitleComponent';
 import useScreenObserver from '@/hooks/useScreenObserver';
 import React from 'react';
 
@@ -15,7 +15,7 @@ export default function TextInPresentation() {
       ref={refCallback}
       className={`${blockStyle} mobile:max-w-[50%] max-w-full gap-y-10 flex flex-col mobile:items-start items-center`}
     >
-      <PrimaryTitle
+      <TitleComponent
         text="Brisbane Somatic Psychotherapy & Counselling"
         className="mobile:text-left text-center"
       />

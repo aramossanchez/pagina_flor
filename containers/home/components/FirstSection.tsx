@@ -2,8 +2,8 @@
 
 import { MessageIcon } from '@/components/icons/MessageIcon';
 import PrimaryButtonComponent from '@/components/primaryButtonComponent/PrimaryButtonComponent';
-import SubtitleComponent from '@/components/subtitleComponent/SubtitleComponent';
-import TitleComponent from '@/components/titleComponent/TitleComponent';
+import SubtitleComponent from '@/components/SubtitleComponent/SubtitleComponent';
+import TitleComponent from '@/components/TitleComponent/TitleComponent';
 import useScreenObserver from '@/hooks/useScreenObserver';
 import React from 'react';
 
